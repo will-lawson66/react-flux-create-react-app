@@ -3,6 +3,7 @@ import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import Header from "./common/Header";
 
+// this is some basic routing
 function App() {
   function getPage() {
     const route = window.location.pathname;

@@ -1,5 +1,6 @@
 import React from "react";
 
+// this is a function component
 function HomePage() {
   return (
     <div className="jumbotron">
