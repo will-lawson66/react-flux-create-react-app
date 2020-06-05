@@ -3,11 +3,12 @@ import { getCourses } from "../api/courseApi";
 
 class CoursesPage extends React.Component {
   state = {
-    courses: []
+    courses: [],
   };
 
+  // lifecycle emthod, using arrow function
   componentDidMount() {
-    getCourses().then(courses => this.setState({ courses: courses }));
+    getCourses().then((courses) => this.setState({ courses: courses }));
   }
 
   render() {
@@ -23,9 +24,12 @@ class CoursesPage extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.courses.map(course => {
+            {this.state.courses.map((course) => {
+              /* iterate over the courses array */
               return (
                 <tr key={course.id}>
+                  {" "}
+                  {/* note the key. */}
                   <td>{course.title}</td>
                   <td>{course.authorId}</td>
                   <td>{course.category}</td>
