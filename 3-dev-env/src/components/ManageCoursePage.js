@@ -1,6 +1,6 @@
 import React from "react";
 
-const ManageCoursePage = props => {
+const ManageCoursePage = (props) => {
   return (
     <>
       <h2>Manage Course</h2>
