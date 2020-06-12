@@ -14,6 +14,7 @@ function CourseForm(props) {
         error={props.errors.title}
       />
 
+      {/* try refactoring this into a form component */}
       <div className="form-group">
         <label htmlFor="author">Author</label>
         <div className="field">
@@ -52,7 +53,7 @@ CourseForm.propTypes = {
   course: PropTypes.object.isRequired,
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 };
 
 export default CourseForm;
