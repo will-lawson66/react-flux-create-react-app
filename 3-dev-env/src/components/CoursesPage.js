@@ -14,6 +14,7 @@ function CoursesPage() {
   }, [courses.length]);
 
   function onChange() {
+    debugger;
     setCourses(courseStore.getCourses());
   }
 

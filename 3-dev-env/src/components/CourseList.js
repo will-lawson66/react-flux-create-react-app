@@ -14,13 +14,14 @@ function CourseList(props) {
         </tr>
       </thead>
       <tbody>
-        {props.courses.map(course => {
+        {props.courses.map((course) => {
           return (
             <tr key={course.id}>
               <td>
                 <button
                   className="btn btn-outline-danger"
                   onClick={() => {
+                    debugger;
                     props.deleteCourse(course.id);
                   }}
                 >
@@ -47,9 +48,9 @@ CourseList.propTypes = {
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       authorId: PropTypes.number.isRequired,
-      category: PropTypes.string.isRequired
+      category: PropTypes.string.isRequired,
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default CourseList;
